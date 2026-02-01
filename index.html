@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD. RIYAZ UDDIN ALIF | Portfolio</title>
+    <style>
+        :root {
+            --neon-blue: #00f3ff;
+            --neon-pink: #ff00ff;
+            --bg-dark: #0a0a0a;
+        }
+
+        /* CURSOR STYLES */
+        #cursor-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--neon-blue);
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            z-index: 9999;
+            pointer-events: none;
+            box-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        #cursor-outline {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--neon-pink);
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            z-index: 9998;
+            pointer-events: none;
+            transition: transform 0.1s ease-out;
+        }
+
+        .cursor-hover {
+            transform: translate(-50%, -50%) scale(1.5) !important;
+            background-color: rgba(255, 0, 255, 0.1);
+            border-color: var(--neon-blue) !important;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            /* Hide default cursor to show custom one */
+            cursor: none; 
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('99d62ec7-3746-49be-a5a0-16d583abfdf1.jfif');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            border-bottom: 2px solid var(--neon-blue);
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid var(--neon-blue);
+            box-shadow: 0 0 20px var(--neon-blue);
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--neon-pink);
+            text-shadow: 0 0 5px var(--neon-pink);
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--neon-pink);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: var(--neon-blue);
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid var(--neon-blue);
+            color: var(--neon-blue);
+            padding: 5px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .skill-tag:hover {
+            background: var(--neon-blue);
+            color: #000;
+            box-shadow: 0 0 15px var(--neon-blue);
+        }
+
+        .contact-info a {
+            color: var(--neon-pink);
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+            cursor: none; /* Keep custom cursor visible */
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+
+    <header>
+        <img src="99d62ec7-3746-49be-a5a0-16d583abfdf1.jfif" alt="MD. RIYAZ UDDIN ALIF" class="profile-img">
+        <h1>MD. RIYAZ UDDIN ALIF</h1>
+        <p class="subtitle">Web Developer & Tech Enthusiast</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>Goal-oriented individual focused on establishing a thriving career in Computer Technology and Web Development by refining skills, obtaining hands-on experience, and driving organizational success.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skill-tag">Web Development</div>
+            <div class="skill-tag">Digital Marketing</div>
+            <div class="skill-tag">HTML5 & CSS3</div>
+            <div class="skill-tag">JavaScript & jQuery</div>
+            <div class="skill-tag">C++ & Python</div>
+            <div class="skill-tag">Video Editing</div>
+            <div class="skill-tag">SEO</div>
+            <div class="skill-tag">Web3 Tech</div>
+            <div class="skill-tag">Content Creation</div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <h3>Web Developer | Alif Gazipur, Bangladesh</h3>
+            <p><em>January 2024 - Present</em></p>
+            <ul>
+                <li>Created web applications utilizing HTML, CSS, JavaScript, and jQuery.</li>
+                <li>Developed responsive applications to improve user experience.</li>
+                <li>Implemented visually appealing front-end solutions.</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Diploma in Engineering (2nd Semester)</strong></p>
+            <p>Model Institute of Engineering And Technology</p>
+            <p>Expected Completion: 2029</p>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Project</h2>
+            <p><strong>Web3 Project:</strong> Expert-level decentralized web technology project focused on the future of the internet.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>📞 Phone: 01905423815</p>
+                <p>📧 Email: <a href="mailto:alifahmedkhan900@gmail.com">alifahmedkhan900@gmail.com</a></p>
+                <p>📍 Location: Gazipur, Bangladesh</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 MD. RIYAZ UDDIN ALIF | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // CURSOR LOGIC
+        const dot = document.getElementById("cursor-dot");
+        const outline = document.getElementById("cursor-outline");
+
+        window.addEventListener("mousemove", (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            // Dot follows mouse instantly
+            dot.style.left = `${posX}px`;
+            dot.style.top = `${posY}px`;
+
+            // Outline follows with a tiny delay for smoothness
+            outline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+        });
+
+        // HOVER EFFECT LOGIC
+        const hoverables = document.querySelectorAll(".skill-tag, section, a, .profile-img");
+
+        hoverables.forEach((item) => {
+            item.addEventListener("mouseenter", () => {
+                outline.classList.add("cursor-hover");
+            });
+            item.addEventListener("mouseleave", () => {
+                outline.classList.remove("cursor-hover");
+            });
+        });
+    </script>
+
+</body>
+</html>
